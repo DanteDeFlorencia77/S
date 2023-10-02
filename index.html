@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+
+    <button
+      onclick="document.getElementById('myImage').src='imagenes/ad_1.jpg'"
+    >
+      Cambia Imagen
+    </button>
+
+    <img id="myImage" src="imagenes/ad_2.jpg" style="width: 100px" >
+
+    <button
+      onclick="document.getElementById('myImage').src='imagenes/ad_2.jpg'"
+    >
+      Vuelve a la imagen original
+    </button>
+
+    <h2>JavaScript Comments</h2>
+
+<p id="demo_1"></p>
+
+<script>
+let x = 5;      // Declare x, give it the value of 5
+let y = x + 12;  // Declare y, give it the value of x + 2 
+
+// Write y to demo:
+document.getElementById("demo_1").innerHTML = y;
+</script>
+<!--los comentarios en js son // para un liknea y /* */ para un bloque-->
+
+<!--Posibilidades de visualización de JavaScript
+JavaScript puede "mostrar" datos de diferentes maneras:
+
+Escribir en un elemento HTML, usando .innerHTML
+Escribir en la salida HTML mediante .document.write()
+Escribir en un cuadro de alerta, utilizando .window.alert()
+Escribir en la consola del navegador, utilizando .console.log()-->
+
+<script>
+alert(5 + 6);
+  </script>
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
+</script>
+
+  </body>
+</html>
